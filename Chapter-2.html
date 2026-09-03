@@ -39,8 +39,122 @@ Converting numbers between different bases is a critical skill in computer scien
 
 <h3>1. Decimal to Binary, Octal, and Hexadecimal Conversion</h3>
 To convert a decimal number to another base, we use the division-remainder method. Divide the decimal number by the target base repeatedly, noting the remainders at each step. The remainders, read from bottom to top, form the number in the new base.
-    
+<br>
+<h3>2. Binary, Octal, and Hexadecimal to Decimal Conversion</h3>
+To convert a number from any base to decimal, multiply each digit by its corresponding positional weight (base raised to the power of its position) and sum the results. Positions are counted from right to left, starting with 0.   
+<br>
+<h3>3. Binary to Octal and Hexadecimal Conversion</h3>
+Binary to Octal: Group binary digits in sets of three from right to left, adding leading zeros if necessary. Convert each group of three binary digits into its equivalent octal digit.<br>
+Binary to Hexadecimal: Group binary digits in sets of four from right to left, adding leading zeros if necessary. Convert each group of four binary digits into its equivalent hexadecimal digit.
 
-    </body>
+<br>
+<h2>Introduction to Boolean Values, Truth Table, Boolean Expression, and Boolean Function</h2>
+
+<h4>Boolean Algebra:</h4> Named after George Boole, Boolean algebra is a branch of algebra in which the values of the variables are the truth values, true and false, usually denoted 1 and 0 respectively. It is fundamental to the design of digital electronic circuits.<br>
+
+<h4>Boolean Values:</h4>These are the two possible values in Boolean algebra: True (represented as 1) and False (represented as 0). These correspond to the ON and OFF states of electronic switches.
+
+<h4>Truth Table:</h4> A truth table is a mathematical table used in logic, specifically in Boolean algebra, to compute the functional values of logical expressions for each combination of input values. It lists all possible input combinations and the corresponding output for a given logical operation or expression.
+
+<h4>Boolean Expression:</h4> A Boolean expression is an expression formed by combining Boolean variables (which can take values 0 or 1), logical operators (AND, OR, NOT), parentheses, and an equals sign. For example, A + B' is a Boolean expression.
+
+<h4>Boolean Function:</h4> A Boolean function, also known as a logic function, is an expression that produces a binary output (0 or 1) based on binary inputs. It defines the relationship between input variables and the output of a logic circuit. For a given set of binary variable values, the function can evaluate to either 0 or 1.
+<br>
+<h2>Logic Gates</h2>
+
+Logic gates are the basic building blocks of any digital system. They are electronic circuits that perform basic logical functions based on one or more binary inputs and produce a single binary output. Each gate implements a specific Boolean operation.
+
+Here are the primary logic gates with their symbols, truth tables, and Boolean expressions:
+
+<h3>1. AND Gate</h3>
+The AND gate produces a HIGH output (1) only if all its inputs are HIGH (1). Otherwise, the output is LOW (0). It performs logical multiplication.
+
+<h3>2. OR Gate</h3>
+The OR gate produces a HIGH output (1) if at least one of its inputs is HIGH (1). The output is LOW (0) only if all inputs are LOW (0). It performs logical addition.
+
+<h3>3. NOT Gate (Inverter)</h3>
+The NOT gate has only one input and one output. It inverts the input; if the input is HIGH (1), the output is LOW (0), and vice versa.
+  
+<h3>4. NAND Gate (NOT-AND)</h3>
+The NAND gate is a combination of an AND gate and a NOT gate. Its output is LOW (0) only if all inputs are HIGH (1); otherwise, the output is HIGH (1).
+
+<h3>5. NOR Gate (NOT-OR)</h3>
+The NOR gate is a combination of an OR gate and a NOT gate. Its output is HIGH (1) only if all inputs are LOW (0); otherwise, the output is LOW (0).
+
+<h3>6. XOR Gate (Exclusive-OR)</h3>
+The XOR gate produces a HIGH output (1) if an odd number of inputs are HIGH (1). For two inputs, it produces a HIGH output if the inputs are different.
+
+<h3>7. XNOR Gate (Exclusive-NOR)</h3>
+The XNOR gate is the complement of the XOR gate. It produces a HIGH output (1) if an even number of inputs are HIGH (1). For two inputs, it produces a HIGH output if the inputs are the same.
+
+<h2>Laws of Boolean Algebra</h2>
+Boolean algebra has several laws that help simplify Boolean expressions and design efficient logic circuits. These laws are similar to algebraic laws but apply to binary variables and logical operations.
+
+Let A, B, and C be Boolean variables (0 or 1).
+
+<h4>1. Commutative Laws</h4>
+These laws state that the order of operands does not affect the result.
+
+AND: A ⋅ B = B ⋅ A
+OR: A + B = B + A
+
+<h4>2. Associative Laws</h4>
+These laws state that the grouping of operands does not affect the result when performing the same operation multiple times.
+
+AND: (A ⋅ B) ⋅ C = A ⋅ (B ⋅ C)
+OR: (A + B) + C = A + (B + C)
+<br>
+<h4>3. Distributive Laws</h4>
+These laws describe how operations distribute over each other.
+
+AND over OR: A ⋅ (B + C) = (A ⋅ B) + (A ⋅ C)
+OR over AND: A + (B ⋅ C) = (A + B) ⋅ (A + C)
+<br>
+<h4>4. De Morgan's Laws</h4>
+De Morgan's laws are crucial for simplifying expressions involving complements (NOT operations).
+
+Law 1: (A + B)' = A' ⋅ B' (The complement of a sum is the product of the complements.)
+Law 2: (A ⋅ B)' = A' + B' (The complement of a product is the sum of the complements.)
+Other important laws and identities:
+
+Identity Law:
+A + 0 = A
+A ⋅ 1 = A
+Null Law:
+A + 1 = 1
+A ⋅ 0 = 0
+Idempotent Law:
+A + A = A
+A ⋅ A = A
+Complement Law:
+A + A' = 1
+A ⋅ A' = 0
+Involution Law (Double Complement): (A')' = A
+Absorption Law:
+A + (A ⋅ B) = A
+A ⋅ (A + B) = A
+Logic Circuits
+Logic circuits (or digital circuits) are physical implementations of Boolean functions using logic gates. They are the fundamental components of digital electronics, such as microprocessors, memory, and other digital devices. Designing a logic circuit involves converting a Boolean expression into a diagram using standard logic gate symbols.
+
+Example: Draw a logic circuit for the Boolean expression Y = A ⋅ B + C'.
+
+Here's how to break it down:
+
+Identify the inputs: A, B, C.
+Identify the operations: AND (A ⋅ B), NOT (C'), OR (result of A ⋅ B and C').
+Draw the gates in sequence:
+An AND gate for A and B.
+A NOT gate for C.
+An OR gate for the output of the AND gate and the output of the NOT gate.
+Logic Circuit Example
+
+In this circuit, the output of the AND gate is A ⋅ B. The output of the NOT gate is C'. These two outputs then feed into the OR gate, producing the final output Y = A ⋅ B + C'.
+
+
+
+
+
+
+</body>
 
 </html>
