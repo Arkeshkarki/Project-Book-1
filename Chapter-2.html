@@ -113,40 +113,44 @@ OR over AND: A + (B ⋅ C) = (A + B) ⋅ (A + C)
 <h4>4. De Morgan's Laws</h4>
 De Morgan's laws are crucial for simplifying expressions involving complements (NOT operations).
 
-Law 1: (A + B)' = A' ⋅ B' (The complement of a sum is the product of the complements.)
+Law 1: (A + B)' = A' ⋅ B' (The complement of a sum is the product of the complements.)<br>
 Law 2: (A ⋅ B)' = A' + B' (The complement of a product is the sum of the complements.)
 Other important laws and identities:
 
-Identity Law:
-A + 0 = A
-A ⋅ 1 = A
-Null Law:
-A + 1 = 1
-A ⋅ 0 = 0
-Idempotent Law:
-A + A = A
+<h4>Identity Law:</h4>
+<li>A + 0 = A</li>
+<li>A ⋅ 1 = A</li>
+<h4>Null Law:</h4>
+<li>A + 1 = 1</li>
+<li>A ⋅ 0 = 0</li>
+<h4>Idempotent Law:</h4>
+A + A = A<br>
 A ⋅ A = A
-Complement Law:
-A + A' = 1
+<h4>Complement Law:</h4>
+A + A' = 1<br>
 A ⋅ A' = 0
-Involution Law (Double Complement): (A')' = A
-Absorption Law:
-A + (A ⋅ B) = A
+<h4>Involution Law (Double Complement):</h4>
+     (A')' = A
+
+<h4>Absorption Law:</h4>
+A + (A ⋅ B) = A<br>
 A ⋅ (A + B) = A
-Logic Circuits
+
+<h2>Logic Circuits</h2>
 Logic circuits (or digital circuits) are physical implementations of Boolean functions using logic gates. They are the fundamental components of digital electronics, such as microprocessors, memory, and other digital devices. Designing a logic circuit involves converting a Boolean expression into a diagram using standard logic gate symbols.
 
 Example: Draw a logic circuit for the Boolean expression Y = A ⋅ B + C'.
 
 Here's how to break it down:
 
-Identify the inputs: A, B, C.
-Identify the operations: AND (A ⋅ B), NOT (C'), OR (result of A ⋅ B and C').
-Draw the gates in sequence:
-An AND gate for A and B.
-A NOT gate for C.
-An OR gate for the output of the AND gate and the output of the NOT gate.
-Logic Circuit Example
+<li>Identify the inputs: A, B, C.</li>
+<li>Identify the operations: AND (A ⋅ B), NOT (C'), OR (result of A ⋅ B and C').</li>
+<li>Draw the gates in sequence:</li>
+    <li2>An AND gate for A and B.</li2>
+    <li2>A NOT gate for C.</li2>
+    <li2>An OR gate for the output of the AND gate and the output of the NOT gate.</li2>
+
+<h5>Logic Circuit Example</h5>
 
 In this circuit, the output of the AND gate is A ⋅ B. The output of the NOT gate is C'. These two outputs then feed into the OR gate, producing the final output Y = A ⋅ B + C'.
 
