@@ -1,147 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-   
+    <title>Class 11 NEB Computer Science - Web Programming</title>
 </head>
 <body>
-    <h1>Web Technology - I</h1>
-  
-    <h2>Web Browsers and Search Engines</h2>
-    <h3>Web Browser</h3>
-    <p>A web browser is an application software that allows users to access, retrieve, and view information on the World Wide Web.</p>
+    <h1>Unit: Web Programming</h1>
+
+    <h2>Introduction</h2>
+    <p><b>Web Programming</b> refers to the process of creating dynamic and interactive websites using programming languages and technologies such as HTML, CSS, JavaScript, PHP, and databases. It is a crucial part of modern computing as it enables communication, e-commerce, education, and entertainment through the internet.</p>
+
+    <h2>Objectives</h2>
     <ul>
-        <li>Google Chrome</li>
-        <li>Mozilla Firefox</li>
-        <li>Microsoft Edge</li>
-        <li>Apple Safari</li>
-        <li>Opera</li>
+        <li>Understand the basics of web development.</li>
+        <li>Learn how to design and structure web pages using HTML.</li>
+        <li>Apply CSS for styling and layout.</li>
+        <li>Use JavaScript for interactivity.</li>
+        <li>Understand server-side programming and database connectivity.</li>
     </ul>
 
-    <h3>Search Engine</h3>
-    <p>A search engine is a web-based tool that enables users to locate information on the WWW.</p>
-    <p><b>How it works:</b></p>
-    <ol>
-        <li>Crawling</li>
-        <li>Indexing</li>
-        <li>Searching</li>
-    </ol>
+    <h2>Client-Server Model</h2>
+    <p>Web programming is based on the <b>client-server model</b>. The client (web browser) sends a request to the server, and the server processes the request and sends back the response (web page).</p>
+
+    <h2>Front-End vs Back-End</h2>
     <ul>
-        <li>Google</li>
-        <li>Bing</li>
-        <li>Yahoo!</li>
-        <li>DuckDuckGo</li>
+        <li><b>Front-End:</b> The part of the website the user interacts with. It includes HTML, CSS, and JavaScript.</li>
+        <li><b>Back-End:</b> The server-side logic that processes requests, interacts with databases, and sends responses. It includes languages like PHP, Python, and Java.</li>
     </ul>
 
-    <h2>Overview of Internet and Web Technology</h2>
+    <h2>HTML (Hypertext Markup Language)</h2>
+    <p>HTML is the standard markup language used to structure web pages.</p>
     <ul>
-        <li>World Wide Web (WWW)</li>
-        <li>Client-Server Model</li>
-        <li>Protocols: HTTP, HTTPS, FTP, TCP/IP</li>
-        <li>IP Address</li>
-        <li>Domain Name System (DNS)</li>
+        <li>Defines headings, paragraphs, lists, links, and images.</li>
+        <li>Provides the skeleton of a web page.</li>
     </ul>
-
-    <h2>Content Management System (CMS)</h2>
-    <p>A CMS allows users to create, manage, and modify content on a website without coding skills.</p>
-    <ul>
-        <li>WordPress</li>
-        <li>Joomla!</li>
-        <li>Drupal</li>
-        <li>Wix</li>
-        <li>Shopify</li>
-    </ul>
-
-    <h2>Introduction to HTML</h2>
-    <p>HTML is the standard markup language for creating web pages.</p>
-    <p><b>Basic Structure:</b></p>
     <pre>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Web Page</title>
+    <title>Sample Page</title>
 </head>
 <body>
-    <h1>Welcome to Web Technology - I</h1>
-    <p>This is a paragraph about HTML.</p>
+    <h1>Welcome to Web Programming</h1>
+    <p>This is a simple HTML page.</p>
 </body>
 </html>
     </pre>
 
-    <h3>Common Tags</h3>
+    <h2>CSS (Cascading Style Sheets)</h2>
+    <p>CSS is used to style HTML elements and control the layout of web pages.</p>
     <ul>
-        <li>&lt;h1&gt; to &lt;h6&gt;: Headings</li>
-        <li>&lt;p&gt;: Paragraph</li>
-        <li>&lt;a&gt;: Hyperlink</li>
-        <li>&lt;img&gt;: Image</li>
-        <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Lists</li>
+        <li>Controls colors, fonts, spacing, and positioning.</li>
+        <li>Supports responsive design for different devices.</li>
+    </ul>
+    <pre>
+p {
+    color: blue;
+    font-size: 16px;
+}
+    </pre>
+
+    <h2>JavaScript</h2>
+    <p>JavaScript is a scripting language used to add interactivity to web pages.</p>
+    <ul>
+        <li>Validates forms.</li>
+        <li>Creates dynamic content.</li>
+        <li>Handles events like clicks and mouse movements.</li>
+    </ul>
+    <pre>
+<script>
+    function greet() {
+        alert("Hello, welcome to Web Programming!");
+    }
+</script>
+<button onclick="greet()">Click Me</button>
+    </pre>
+
+    <h2>Server-Side Programming</h2>
+    <p>Server-side programming handles data processing and communication with databases. Common languages include:</p>
+    <ul>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>ASP.NET</li>
     </ul>
 
-    <h3>Attributes</h3>
+    <h2>Databases</h2>
+    <p>Databases store and manage data for web applications. SQL (Structured Query Language) is commonly used to interact with databases.</p>
     <pre>
-<a href="https://www.readersnepal.com" target="_blank">Visit Readers Nepal</a>
-<img src="image.jpg" alt="Description" width="200" height="150">
+CREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
     </pre>
 
-    <h2>Types of Tags</h2>
-    <h3>Paired Tags</h3>
-    <p>Examples: &lt;p&gt;...&lt;/p&gt;, &lt;h1&gt;...&lt;/h1&gt;, &lt;b&gt;...&lt;/b&gt;</p>
-    <h3>Unpaired Tags</h3>
-    <p>Examples: &lt;img&gt;, &lt;br&gt;, &lt;hr&gt;, &lt;input&gt;</p>
-
-    <h2>Introduction to CSS</h2>
-    <p>CSS is used to style HTML documents.</p>
-    <h3>Uses of CSS</h3>
+    <h2>Advantages of Web Programming</h2>
     <ul>
-        <li>Separation of content and presentation</li>
-        <li>Consistent styling</li>
-        <li>Responsive design</li>
-        <li>Richer user experience</li>
+        <li>Enables global communication.</li>
+        <li>Supports e-commerce and online services.</li>
+        <li>Provides interactive learning platforms.</li>
+        <li>Facilitates social networking and entertainment.</li>
     </ul>
 
-    <h3>Types of CSS</h3>
-    <h4>Inline CSS</h4>
-    <pre>
-<p style="color: blue; font-size: 16px;">This paragraph has inline styles.</p>
-    </pre>
+    <h2>Challenges in Web Programming</h2>
+    <ul>
+        <li>Security threats like hacking and data theft.</li>
+        <li>Cross-browser compatibility issues.</li>
+        <li>Maintaining responsive design for multiple devices.</li>
+        <li>Managing large-scale applications efficiently.</li>
+    </ul>
 
-    <h4>Internal CSS</h4>
-    <pre>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Internal CSS Example</title>
-    <style>
-        body { background-color: lightgray; font-family: Arial; }
-        h1 { color: green; text-align: center; }
-    </style>
-</head>
-<body>
-    <h1>Hello from Internal CSS</h1>
-    <p>This page uses embedded styles.</p>
-</body>
-</html>
-    </pre>
-
-    <h4>External CSS</h4>
-    <pre>
-/* styles.css */
-body { background-color: #f0f8ff; font-family: Verdana; }
-h1 { color: #8a2be2; text-align: left; }
-p { line-height: 1.5; }
-    </pre>
-    <pre>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>External CSS Example</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Styling with External CSS</h1>
-    <p>This content is styled by an external stylesheet.</p>
-</body>
-</html>
-    </pre>
+    <h2>Practical Work</h2>
+    <ul>
+        <li>Create a simple HTML page with headings, paragraphs, and images.</li>
+        <li>Apply CSS styles to format the page.</li>
+        <li>Use JavaScript to validate a form.</li>
+        <li>Connect a web page to a database using PHP and SQL.</li>
+    </ul>
 
 </body>
 </html>
