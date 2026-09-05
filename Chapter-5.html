@@ -1,13 +1,92 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <title>Class 11 NEB Computer Science - Unit 4</title>
+</head>
+<body>
+    <h1>Unit 4: Programming Concepts</h1>
 
-    </head>
+    <h2>Topics Covered</h2>
+    <ul>
+        <li>Problem Solving and Algorithm</li>
+        <li>Flowcharts</li>
+        <li>Introduction to Programming Languages</li>
+        <li>Structure of C Programming</li>
+        <li>Data Types, Variables, Operators</li>
+        <li>Input and Output Statements</li>
+    </ul>
 
+    <h2>Problem Solving and Algorithm</h2>
+    <p>An <b>algorithm</b> is a step-by-step procedure to solve a problem.</p>
+    <p><b>Example Algorithm:</b> To add two numbers</p>
+    <ol>
+        <li>Start</li>
+        <li>Read two numbers A and B</li>
+        <li>Calculate SUM = A + B</li>
+        <li>Display SUM</li>
+        <li>Stop</li>
+    </ol>
 
+    <h2>Flowchart</h2>
+    <p>A <b>flowchart</b> is a diagrammatic representation of an algorithm using symbols.</p>
+    <p><b>Example:</b> Flowchart for adding two numbers</p>
+    <ul>
+        <li>Oval: Start/Stop</li>
+        <li>Parallelogram: Input/Output</li>
+        <li>Rectangle: Process</li>
+    </ul>
 
-    <body>
-    
+    <h2>Introduction to Programming Languages</h2>
+    <p>Programming languages are used to write instructions for computers. Examples: C, C++, Java, Python.</p>
 
-    </body>
+    <h2>Structure of C Programming</h2>
+    <p>A simple C program has:</p>
+    <ul>
+        <li>Header files</li>
+        <li>Main function</li>
+        <li>Statements</li>
+    </ul>
 
+    <p><b>Example Program:</b></p>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a, b, sum;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    sum = a + b;
+    printf("Sum = %d", sum);
+    return 0;
+}
+    </pre>
+
+    <h2>Data Types, Variables, Operators</h2>
+    <ul>
+        <li><b>Data Types:</b> int, float, char, double</li>
+        <li><b>Variables:</b> Names used to store data (e.g., int age = 16;)</li>
+        <li><b>Operators:</b> +, -, *, /, %</li>
+    </ul>
+
+    <h2>Input and Output Statements</h2>
+    <ul>
+        <li><b>Input:</b> scanf()</li>
+        <li><b>Output:</b> printf()</li>
+    </ul>
+
+    <p><b>Example:</b></p>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    float radius, area;
+    printf("Enter radius: ");
+    scanf("%f", &radius);
+    area = 3.14 * radius * radius;
+    printf("Area of circle = %.2f", area);
+    return 0;
+}
+    </pre>
+
+</body>
 </html>
